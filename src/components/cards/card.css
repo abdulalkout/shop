@@ -1,0 +1,17 @@
+.productsImg {
+  height: 250px;
+  width: 100%;
+  border-radius: 10%;
+}
+
+h3 {
+  text-align: center;
+}
+
+.card {
+  border: solid 2px black;
+  width: 200px;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 10%;
+}

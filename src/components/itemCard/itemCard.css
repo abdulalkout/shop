@@ -1,0 +1,17 @@
+.itemImg {
+  height: 200px;
+  border-radius: 10%;
+  width: 200px;
+  margin-left: 15%;
+  margin-top: 10px;
+}
+
+.itemCard {
+  width: 300px;
+  border: solid 2px black;
+  border-radius: 10%;
+}
+
+h4 {
+  text-align: center;
+}

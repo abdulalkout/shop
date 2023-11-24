@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(224, 170, 23);
+  height: 80px;
+}
+
+.logo {
+  height: 80px;
+  width: 100px;
+}
+
+.navTags {
+  margin-top: 30px;
+  margin-right: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navTags :hover {
+  color: aqua;
+}
+
+.linkTags {
+  text-decoration: none;
+  color: black;
+}
