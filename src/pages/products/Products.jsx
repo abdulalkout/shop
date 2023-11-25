@@ -1,6 +1,7 @@
 import React, { useEffect, createContext, useState } from "react";
 import Nav from "../../components/nav/Nav";
 import ItemCard from "../../components/itemCard/ItemCard";
+import ProductDetails from "../../components/productDetails/ProductDetails";
 import "./products.css";
 
 function Products() {
@@ -25,19 +26,20 @@ function Products() {
   }, []);
 
   const selectProduct = (item) => {
-    setOpenedProduct(true);
     setSelectedItem(item);
+    setOpenedProduct(true);
   };
 
   const closeProduct = () => {
     setOpenedProduct(false);
   };
 
-  const openProduct = () => {
+  const openProduct = (selectedItem) => {
     return (
       <div>
         <Nav />
         <button onClick={closeProduct}>Back</button>
+        <ProductDetails selectedItem={selectedItem} />
       </div>
     );
   };
@@ -64,7 +66,7 @@ function Products() {
     );
   };
 
-  return openedProduct ? openProduct() : allProducts();
+  return openedProduct ? openProduct(selectedItem) : allProducts();
 }
 
 export default Products;
