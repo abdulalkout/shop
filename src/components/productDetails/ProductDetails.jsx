@@ -9,7 +9,7 @@ function ProductDetails({ selectedItem }) {
       <p>{selectedItem.description}</p>
       <h4>${selectedItem.price}</h4>
       {/* <img src={selectedItem.rating} /> */}
-      <button>By Now</button>
+      <button className="byButton">By Now</button>
     </div>
   );
 }

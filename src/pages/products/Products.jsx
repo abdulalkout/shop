@@ -38,7 +38,7 @@ function Products() {
     return (
       <div>
         <Nav />
-        <button onClick={closeProduct}>Back</button>
+        <button className="backButton" onClick={closeProduct}>{`<`}</button>
         <ProductDetails selectedItem={selectedItem} />
       </div>
     );
